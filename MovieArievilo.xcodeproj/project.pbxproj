@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		41C97F5E26F0059400A03249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C97F5D26F0059400A03249 /* AppDelegate.swift */; };
-		41C97F6026F0059400A03249 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C97F5F26F0059400A03249 /* SceneDelegate.swift */; };
 		41C97F6226F0059400A03249 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C97F6126F0059400A03249 /* ViewController.swift */; };
-		41C97F6526F0059400A03249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C97F6326F0059400A03249 /* Main.storyboard */; };
 		41C97F6726F0059700A03249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C97F6626F0059700A03249 /* Assets.xcassets */; };
 		41C97F6A26F0059700A03249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C97F6826F0059700A03249 /* LaunchScreen.storyboard */; };
+		41C97F7226F0137400A03249 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C97F7126F0137300A03249 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		41C97F5A26F0059400A03249 /* MovieArievilo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieArievilo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C97F5D26F0059400A03249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41C97F5F26F0059400A03249 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		41C97F6126F0059400A03249 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		41C97F6426F0059400A03249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41C97F6626F0059700A03249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41C97F6926F0059700A03249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41C97F6B26F0059700A03249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41C97F7126F0137300A03249 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				41C97F5D26F0059400A03249 /* AppDelegate.swift */,
-				41C97F5F26F0059400A03249 /* SceneDelegate.swift */,
 				41C97F6126F0059400A03249 /* ViewController.swift */,
-				41C97F6326F0059400A03249 /* Main.storyboard */,
 				41C97F6626F0059700A03249 /* Assets.xcassets */,
 				41C97F6826F0059700A03249 /* LaunchScreen.storyboard */,
 				41C97F6B26F0059700A03249 /* Info.plist */,
+				41C97F7126F0137300A03249 /* HomeViewController.swift */,
 			);
 			path = MovieArievilo;
 			sourceTree = "<group>";
@@ -126,7 +123,6 @@
 			files = (
 				41C97F6A26F0059700A03249 /* LaunchScreen.storyboard in Resources */,
 				41C97F6726F0059700A03249 /* Assets.xcassets in Resources */,
-				41C97F6526F0059400A03249 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,21 +135,13 @@
 			files = (
 				41C97F6226F0059400A03249 /* ViewController.swift in Sources */,
 				41C97F5E26F0059400A03249 /* AppDelegate.swift in Sources */,
-				41C97F6026F0059400A03249 /* SceneDelegate.swift in Sources */,
+				41C97F7226F0137400A03249 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		41C97F6326F0059400A03249 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41C97F6426F0059400A03249 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		41C97F6826F0059700A03249 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,6 +277,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VCG3Q5X7H;
 				INFOPLIST_FILE = MovieArievilo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7VCG3Q5X7H;
 				INFOPLIST_FILE = MovieArievilo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
